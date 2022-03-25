@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Bring Back CS {% endblock %}</title>
+    <link href="../../static/css/newcss.css" rel="stylesheet">
+  	<script src="https://kit.fontawesome.com/df07cb0f03.js" crossorigin="anonymous"></script>
+
+    <style>
+
+      .fa-trash{
+        color: #000000;
+      }
+
+      .fa-trash:hover{
+        color: #ad0303;
+      }
+
+      .fa-edit{
+        color: #000000;
+      }
+
+      .fa-edit:hover{
+        color: #6bb2b8;
+      }
+
+    </style>
+</head>
+<body>
+  <div  id="horizontal">
+    <ul>
+      <li><a href="{{ url_for('admin') }}">Admin Dashboard</a></li>
+      <li><a href="{{ url_for('addproduto') }}">Add Produto</a></li>
+      <li style="float:right"><a class="cart" href="{{ url_for('home') }}">Home</a></li>
+    </ul>
+  </div>
+{% block content %}
+
+    <span class="titulo" style="text-align: center;margin-top: 30px">ADMIN DASHBOARD</span>
+    <hr>
+
+    <!-- LISTA DE PRODUTOS DISPONIVEIS -->
+    <div  class="divform">
+
+      <span class="titulo" style="text-align: center">Produtos Disponiveis</span>
+
+        <table>
+
+            <tr>
+              <th style="border-radius: 5px 0 0 0" class="idd">Id</th>
+              <th>Nome</th>
+              <th class="vinte">Valor</th>
+              <th class="vinte">Estoque</th>
+              <th style="border-radius: 0 5px 0 0" class="min"></th>
+            </tr>
+
+            {% for produto in produtos %}
+              <tr class="lin">
+                <td>{{ produto.id }}</td>
+                <td>{{ produto.nome }}</td>
+                <td>R${{ produto.valor_unitario }}</td>
+                <td>{{ produto.estoque }} u.</td>
+                <td><a href="{{ url_for('att_produto', idp=produto.id) }}"> <i class="fas fa-edit"></i> </a>
+                    <a href="{{ url_for('deletar_produto', idp=produto.id) }}"> <i class="fas fa-trash"></i> </a> </td>
+              </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+
+{% endblock %}
+</body>
+</html>

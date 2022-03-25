@@ -1,0 +1,183 @@
+/*
+// Limpar formatação */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h1{
+    font-size: 2.8em;
+}
+h3 {
+    background: black;
+    color:white;
+    padding: 8px;
+    margin-top: 6px;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #DB3908;
+}
+a:hover {
+    text-decoration: underline;
+    font-size: 105%;
+}
+
+/*
+    FORMS
+*/
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #DB3908;
+}
+
+#cabecalho a:link, #cabecalho a:visited {
+    color: white;
+    padding: 8px 12px;
+    font-size: 1em;
+}
+#cabecalho a:hover {
+    color: #DB3908;
+    background: white;
+    text-decoration: none;
+}
+.selecionado a {
+    background: white;
+    color: #DB3908 !important; 
+    text-decoration: none;
+}
+#lateral a:link, #lateral a:visited {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+#lateral a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+***
+***     INDEX.HTML
+***
+*/
+
+
+/*
+// Formatação do cabeçalho */
+
+#cabecalho {
+    background: #DB3908;
+    text-align: center;
+    padding: 15px;
+}
+#logo {
+    color: black;
+    padding: 8px;
+}
+#menu{
+    color: white;
+    font-size: 1.15em;
+}
+
+/*
+// Formatação página principal */
+
+#principal {
+    width: 920px;
+    margin: 0px auto;
+    padding: 15px;
+}
+#postagens {
+    width: 580px;
+    margin: 0px auto;
+}
+#lateral {
+    margin-top: 20px;
+    width: 240px;
+    float: right;
+}
+
+
+#rodape {
+    clear: both;
+    display: block;
+    background: hsl(0, 0%, 87%);
+    text-align: center;
+    padding: 11px;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
+/*
+// Classes */
+
+.branco {
+    color: white;
+}
+.linha {
+    background: black;
+    padding: 3px;
+}
+.titulo {
+    color: #DB3908;
+    display: inline;
+}
+.postagem {
+    padding: 7px;
+    margin: 3px;
+}
+.borda{
+    border: 8px inset black;
+}
+.leia-mais{
+    color: #DB3908;
+}
+.data-postagem {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    display: block;
+}
+
+
+/*
+***
+***    FIM INDEX.HTML
+***
+*/
+
+/*
+***     NOTICIAS.HTML
+*/
+
+#noticias{
+    width: 920px;
+    margin: 0 auto;
+}

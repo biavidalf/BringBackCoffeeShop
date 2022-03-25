@@ -1,0 +1,336 @@
+/*
+========================== BARRA DE NAVEGAÇÃO PRINCIPAL============================
+*/
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace, monospace;
+}
+#horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #231f20;
+}
+
+#horizontal li {
+  float: left;
+}
+
+#horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#horizontal li a:hover:not(.active) {
+  background-color: #6bb2b8;
+}
+
+.cart {
+  background-color: #6bb2b8;
+}
+
+
+/*
+========================== INDEX PAGE DISPLAY PRODUTOS ==========================
+*/
+div.gallery {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #231f20;
+  float: left;
+  width: 18.2%;
+}
+h3{
+	margin: 5px auto;
+}
+
+div.gallery img {
+  width: 95%;
+  height: auto;
+}
+
+div.gallery:hover {
+  border: 2px solid #6bb2b8;
+}
+
+div.desc {
+  text-align: center;
+}
+
+/* Botoes VIEW e CARRINHO */
+.ver{
+  background: #231f20;
+  color: white;
+  padding: 3px 6px;
+}
+
+.carrinho{
+  background: #6bb2b8;
+  color: #231f20;
+  padding: 3px 6px;
+}
+
+.linkk{
+  float:right;
+  text-decoration: none;
+  color: #231f20;
+
+}
+.linkk a:visited{
+  color: #231f20;
+}
+.linkk:hover{
+  color: #6bb2b8;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* PRODUTO INDIVIDUAL */
+.wrapper {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 330px;
+  width: 320px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 100px;
+  margin: 10px 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 20px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+.menor{
+  height: 20px;
+  margin: 10px 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 20px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+.qntd{
+  margin: 10px 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+.spann {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  display: inline-block;
+  height: 50px;
+  width: 250px;
+  margin: 0 30px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #6bb2b8;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #6bb2b8;
+}
+
+.num{
+  margin: 2px 0 0 38px;
+  height: 25px;
+}
+
+/*
+========================== ADMIN DASHBOARD PRODUTOS DISPONIVEIS ==========================
+*/
+
+/* INFORMAÇÕES SOBRE O ESTOQUE */
+#addash li{
+  display: inline;
+  margin: 10px 5px;
+}
+.bola{
+  background: #6bb2b8;
+  padding: 3px 5px;
+  border-radius: 80%;
+}
+.alert.success {
+  background-color: #c4f8c4;
+  padding: 8px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  color: #000;
+}
+
+.alert.error {
+  background-color: #fa9898;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* TABELA DE PRODUTOS DISPONIVEIS ADMIN */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.idd{
+	width: 10%;
+}
+.vinte{
+	width: 13%;
+}
+.min{
+  width: 10%;
+
+  text-align: left;
+}
+.nome{
+    width: 61%;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #6bb2b8;
+  color: white;
+}
+
+
+/*
+========================== FORMULARIOS =============================
+*/
+.campotexto {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.botoes {
+  width: 100%;
+  background-color: #231f20;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botoes:hover {
+  background-color: #6bb2b8;
+}
+.titulo{
+  font-size: 1.5em;
+  font-style: inherit;
+  display: block;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 13px;
+}
+.divform {
+  width: 61%;
+  margin: 20px auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

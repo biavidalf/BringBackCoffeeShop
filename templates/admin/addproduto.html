@@ -1,0 +1,39 @@
+{% extends 'admin/admin.html' %}
+
+{% block content %}
+  <form style="margin: 20px auto;width: 41%" action="" method="POST" class="divform" enctype="multipart/form-data">
+      {{ form.csrf_token }}
+
+    <h2 class="titulo">Cadastro de produto</h2>
+      <label>Nome</label>
+      {{
+        form.nome(class="campotexto")
+      }}
+
+      <label>Descricao</label>
+      {{
+        form.descricao(class="campotexto")
+      }}
+
+      <label>Valor unitario</label>
+      {{
+        form.valor_unitario(class="campotexto")
+      }}
+
+      <label>Categoria</label>
+      {{
+        form.categoria(class="campotexto")
+      }}
+
+      <label>Estoque</label>
+      {{
+        form.estoque(class="campotexto")
+      }}
+      <label>Imagem</label>
+      {{
+        form.image(class="campotexto")
+      }}
+      <button class="botoes" type="submit">Adicionar</button>
+
+  </form>
+{% endblock %}

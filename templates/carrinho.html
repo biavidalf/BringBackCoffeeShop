@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Carrinho | {{ super()}} {% endblock %}
+
+{% block content %}
+<section id="cart_items">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="/">Home</a></li>
+				  <li class="active">Carrinho de Compras</li>
+				</ol>
+			</div>
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Item</td>
+							<td class="description"></td>
+							<td class="price">Preço</td>
+							<td class="quantity">Quantidade</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+					{% for item in itens %}
+						<tr>
+							<td class="cart_product">
+								<a href="{{ url_for('produto', idp=item.produto.id) }}"><img src="{{ item.produto.image }}" alt="" height="180px"></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="{{ url_for('produto', idp=item.produto.id) }}">{{ item.produto.nome }}</a></h4>
+								<p>Código do Produto: {{ item.produto.id }}</p>
+							</td>
+							<td class="cart_price">
+								<p>R${{ item.produto.valor_unitario }}</p>
+							</td>
+							<td class="cart_quantity">
+								<p>{{ item.quantidade }}</p>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">R${{ item.produto.valor_unitario*item.quantidade }}</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href="{{ url_for('deletar_item', idi=item.id) }}"><i class="fas fa-trash"></i></a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td class="cart_product">
+								<a href=""></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href=""></a></h4>
+
+							</td>
+							<td class="cart_price">
+								<p></p>
+							</td>
+							<td class="cart_quantity">
+								<p></p>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price"></p>
+							</td>
+
+						</tr>
+					{% endfor %}
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section> <!--/#cart_items-->
+
+	<section id="do_action">
+		<div class="container">
+			<div class="heading">
+				<h3>Vamos finalizar seu pedido?</h3>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="total_area">
+						<ul>
+							<li>Usuário <span>{{ current_user.username }}</span></li>
+							<li>Total do Pedido <span>R${{ valor }}</span></li>
+						</ul>
+							<a class="btn btn-default check_out" href="">Check-Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#do_action-->
+{% endblock %}

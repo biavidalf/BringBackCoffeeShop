@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block title %}{{product.nome}} | {{ super()}} {% endblock %}
+
+{% block content %}
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Categoria</h2>						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Cafes') }}">Cafés</a></h4>
+								</div>
+							</div>
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Descartaveis') }}">Descartáveis</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Roupas') }}">Camisas e Moletons</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+										<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Retro') }}">Retro</a></h4>
+								</div>
+							</div>
+						</div><!--/category-products-->
+
+					</div>
+				</div>
+
+				<div class="col-sm-9 padding-right">
+					<div class="product-details"><!--product-details-->
+						<div class="col-sm-5">
+							<div class="view-product">
+								<img src="{{ product.image }}" alt="" />
+							</div>
+
+						</div>
+						<div class="col-sm-7">
+							<div class="product-information"><!--/product-information-->
+								<h2>{{ product.nome }}</h2>
+								<p>Descrição: </p>
+                                <p>{{ product.descricao }}</p>
+								<span>
+									<span>R${{ product.valor_unitario }}</span>
+                                    <form action="" method="post">
+
+                                        {% if product.estoque > 0 %}
+                                            {{ form.csrf_token }}
+                                            <label>Quantidade:</label>
+                                            {{ form.quantidade(class="num", type="number", min="1", max="{{product.estoque}}",
+                                            step="1", value="1") }}
+                                            <button type="submit" class="btn btn-fefault cart">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Add ao Carrinho
+                                            </button>
+                                            <p><b>Disponibilidade:</b> em estoque</p>
+                                        {% else %}
+                                            <p><b>Disponibilidade:</b> Fora de estoque</p>
+                                        {% endif %}
+                                    </form>
+								</span>
+							</div><!--/product-information-->
+						</div>
+					</div><!--/product-details-->
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
+<!--
+{#% block content %#}
+  <div class="wrapper">
+
+    <div class="product-img">
+      <img src="{{ product.image }}" style="width:100%; margin: 45px 10px;">
+    </div>
+
+    <div class="product-info">
+
+          <div class="product-text">
+            <h1>{{ product.nome }}</h1>
+
+             <p style="margin-bottom: 0">{{ product.descricao }}</p>
+
+              <form action="" method="post">
+              {% if product.estoque > 0 %}
+              <span class="qntd">(Em estoque)</span><br>
+
+                  <div><br>
+                    <label class="qntd">Quantidade:</label><br>
+
+                        {{ form.csrf_token }}
+
+                        pega a quantidade do produto
+                        {{ form.quantidade(class="num", type="number", min="1", max="{{product.estoque}}", step="1",
+                        value="1") }}
+
+                  </div>
+
+                  valor do produto | COMPRAR
+                  <div class="product-price-btn">
+
+                    <button type="submit">R${{product.valor_unitario}} | Comprar</button>
+                  </div>
+
+              {% else %}
+
+              <span class="qntd">(Fora de estoque)</span><br>
+
+              {% endif %}
+              </form>
+
+          </div>
+
+    </div>
+
+  </div>
+{#% endblock %#}
+-->

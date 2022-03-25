@@ -1,0 +1,2 @@
+SELECT clientes.nome, produtos.nome AS produto FROM bringback0.clientes, bringback0.produtos, bringback0.itens, bringback0.carrinho
+WHERE (clientes.id = carrinho.id) AND (produtos.id = itens.produto_id) AND (carrinho.id = itens.carrinho_id)

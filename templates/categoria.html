@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}{{name}} | {{ super()}} {% endblock %}
+
+{% block content %}
+
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span><br>BRING BACK ONLINE</span> COFFEE SHOP</h1>
+                                    <h2><i>Desconectando-se do presente,<br>Conectando-se com o passado</i></h2>
+								</div>
+								<div class="col-sm-6">
+									<img src="{{ product.image }}" class="girl img-responsive" alt="" />
+								</div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Categoria</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Cafes') }}">Cafés</a></h4>
+								</div>
+							</div>
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Descartaveis') }}">Descartáveis</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Roupas') }}">Camisas e Moletons</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('categoria', nome='Retro') }}">Retro</a></h4>
+								</div>
+							</div>
+						</div><!--/category-products-->
+					</div>
+				</div>
+
+				<div class="col-sm-9 padding-right">
+					<div class="features_items"><!--features_items-->
+						<h2 class="title text-center">{{ name }}</h2>
+
+						{% for produto in produtos %}
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="{{ produto.image }}" alt="" />
+											<h2>R${{ produto.valor_unitario }}</h2>
+											<p>{{ produto.nome }}</p>
+											<a href="{{ url_for('produto', idp=produto.id) }}" class="btn btn-default add-to-cart"><i class="fa fa-info-circle"></i>Ver</a>
+											<a href="{{ url_for('quick', idp=produto.id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Carrinho</a>
+										</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<h2>R${{ produto.valor_unitario }}</h2>
+												<p>{{ produto.nome }}</p>
+												<a href="{{ url_for('produto', idp=produto.id) }}" class="btn btn-default add-to-cart"><i class="fa fa-info-circle"></i>Ver</a>
+												<a href="{{ url_for('quick', idp=produto.id) }}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Carrinho</a>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+    <script src="../static/js/jquery.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="../static/js/jquery.scrollUp.min.js"></script>
+	<script src="../static/js/price-range.js"></script>
+    <script src="../static/js/jquery.prettyPhoto.js"></script>
+    <script src="../static/js/main.js"></script>
+{% endblock %}
