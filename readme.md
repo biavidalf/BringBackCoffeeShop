@@ -32,41 +32,27 @@ Nesse projeto foram usadas as seguintes tecnologias:
   - [Flask WTForms](https://flask-wtf.readthedocs.io/en/1.0.x/)
   - [Flask SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
   - [Flask User](https://flask-user.readthedocs.io/en/latest/)
+  - [Flask Migrate](https://flask-migrate.readthedocs.io/en/latest/)
 
 ### Pré-requisitos
+* $ pip freeze > requirements.txt
 
-Por o bash para esses imports - app.py
+Instalando Flask, Flask SqlAlchemy, Flask Migrate, Flask WTForms, Flask User
 ```console
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_uploads import UploadSet, configure_uploads, IMAGES
+$ pip install Flask
+$ pip install -U Flask-SQLAlchemy
+$ pip install Flask-Migrate
+$ pip install -U Flask-WTF
+$ pip install Flask-User
 ```
 
-Por o bash para esses imports - controller/rotas.py
+Banco de dados 
 ```console
-from app import app, db, photos, IMAGES
-from models.tables import *
-from models.forms import *
-from flask import render_template, url_for, flash, redirect
-from templates import *
-from flask_user import login_required, current_user
-from sqlalchemy import func
+$ flask db init
+$ flask db migrate -m "Initial migration."
+$ flask db upgrade
+$ flask db --help
 ```
-
-Por o bash para esses imports - models/forms.py
-```console
-from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, IntegerField, FloatField, SelectField
-from wtforms.validators import DataRequired
-from flask_wtf.file import FileField, FileAllowed
-```
-
-Por o bash para o funcionamento do banco de dados
-```console
-flask migrate flask update...
-```
-https://flask-migrate.readthedocs.io/en/latest/
 
 # Funcionalidades
 Features do projeto:
