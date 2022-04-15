@@ -1,6 +1,6 @@
 # Bring Back Coffee Shop
 
-![home-intro](../../readme_prints/banner.PNG)
+![home-intro](readme_prints/banner.PNG)
 
 <h3 align="center">
     E-commerce de uma cafeteria vintage com Python/Flask
@@ -74,13 +74,13 @@ Features do projeto:
 
 [Link pro Template base](https://freemiumdownload.com/downloads/e-shopper-free-ecommerce-html-template/)
 ## Homepage
-![home-intro](../../readme_prints/banner.PNG)
+![home-intro](readme_prints/banner.PNG)
 
 ---
 
 ## Login e Cadastro
 
-![login-register](../../readme_prints/login-register.gif)
+![login-register](readme_prints/login-register.gif)
 
 ---
 
@@ -88,21 +88,21 @@ Features do projeto:
 
 ### Todos os Produtos
 
-![produtos](../../readme_prints/produtos.gif)
+![produtos](readme_prints/produtos.gif)
 
 ### Produto Individual
 
-![produto_individual](../../readme_prints/produto_individual.gif)
+![produto_individual](readme_prints/produto_individual.gif)
 
 ### Categorias e Filtros
 
-![categorias_filtros](../../readme_prints/categorias_filtros.gif)
+![categorias_filtros](readme_prints/categorias_filtros.gif)
 
 ---
 
 ## Carrinho
 
-![carrinho](../../readme_prints/carrinho.gif)
+![carrinho](readme_prints/carrinho.gif)
 
 ---
 
@@ -110,10 +110,10 @@ Features do projeto:
 Área para os administradores/donos do e-commerce poderem gerenciar os produtos facilmente
 
 ### Dashboard
-![admin_dashboard](../../readme_prints/admin_dashboard.gif)
+![admin_dashboard](readme_prints/admin_dashboard.gif)
 
 ### Adicionar Protudo
-![admin_add_produto](../../readme_prints/admin_add_produto.PNG)
+![admin_add_produto](readme_prints/admin_add_produto.PNG)
 
 ---
 
