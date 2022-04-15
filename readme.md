@@ -1,12 +1,12 @@
 # Bring Back Coffee Shop
 <h3 align="center">
-    imagem da logo
+    <img alt="home-intro" src="readme_prints/logo_bbcs.jpg">
     <p>
     E-commerce de uma cafeteria vintage com Python/Flask
     </p>
 </h3>
 
-> [Vídeo completo mostrando o site](https://www.linkedin.com/posts/beatriz-vidal-a2b114200_sql-html-github-activity-6912455922967613441-H3Du?utm_source=linkedin_share&utm_medium=member_desktop_web)
+> [Vídeo completo mostrando o site]()
 
 # Sumário
 
@@ -35,7 +35,12 @@ Nesse projeto foram usadas as seguintes tecnologias:
   - [Flask Migrate](https://flask-migrate.readthedocs.io/en/latest/)
 
 ### Pré-requisitos
-* $ pip freeze > requirements.txt
+Para ver todos, consulte o requirements.txt, ou faça a instalação pelo comando:
+```console
+$ pip install -r requirements.txt
+```
+
+Se quiser instalar separadamente:
 
 Instalando Flask, Flask SqlAlchemy, Flask Migrate, Flask WTForms, Flask User
 ```console
@@ -46,7 +51,7 @@ $ pip install -U Flask-WTF
 $ pip install Flask-User
 ```
 
-Banco de dados 
+Inicialização do Banco de Dados 
 ```console
 $ flask db init
 $ flask db migrate -m "Initial migration."
@@ -70,23 +75,15 @@ Features do projeto:
 [Template base](https://freemiumdownload.com/downloads/e-shopper-free-ecommerce-html-template/)
 ## Homepage
 <h3 align="center">
-    <img alt="homepage" src="static\prints\homepage.png">
+    <img alt="homepage" src="readme_prints/banner.PNG">
 </h3>
 
 ---
 
 ## Login e Cadastro
 
-### Cadastro
-
 <h3 align="center">
-    <img alt="cadastro" src="static\prints\cadastro.gif">
-</h3>
-
-### Login
-
-<h3 align="center">
-    <img alt="login" src="static\prints\login.png">
+    <img alt="login-cadastro" src="readme_prints/login-register.gif">
 </h3>
 
 ---
@@ -96,19 +93,19 @@ Features do projeto:
 ### Todos os Produtos
 
 <h3 align="center">
-    <img alt="todos_produtos" src="static\prints\produtos.png">
+    <img alt="todos_produtos" src="readme_prints/produtos.gif">
 </h3>
 
 ### Produto Individual
 
 <h3 align="center">
-    <img alt="produto_individual" src="static\prints\produto_individual.png">
+    <img alt="produto_individual" src="readme_prints/produto_individual.gif">
 </h3>
 
 ### Categorias e Filtros
 
 <h3 align="center">
-    <img alt="categorias_filtros" src="static\prints\categorias_filtros.png">
+    <img alt="categorias_filtros" src="readme_prints/categorias_filtros.gif">
 </h3>
 
 ---
@@ -116,15 +113,7 @@ Features do projeto:
 ## Carrinho
 
 <h3 align="center">
-    <img alt="carrinho" src="static\prints\carrinho.png">
-</h3>
-
----
-
-## Logout
-
-<h3 align="center">
-    <img alt="logout" src="static\prints\logout.png">
+    <img alt="carrinho" src="readme_prints/carrinho.gif">
 </h3>
 
 ---
@@ -134,17 +123,12 @@ Features do projeto:
 
 ### Dashboard
 <h3 align="center">
-    <img alt="logout" src="static\prints\admin_dashboard.png">
+    <img alt="logout" src="readme_prints/admin_dashboard.gif">
 </h3>
 
 ### Adicionar Protudo
 <h3 align="center">
-    <img alt="logout" src="static\prints\admin_add_produto.png">
-</h3>
-
-### Editar Produto
-<h3 align="center">
-    <img alt="logout" src="static\prints\admin_edit_produto.png">
+    <img alt="logout" src="readme_prints/admin_add_produto.PNG">
 </h3>
 
 ---
