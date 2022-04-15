@@ -1,9 +1,9 @@
 # Bring Back Coffee Shop
+
+![home-intro](readme_prints/banner.PNG)
+
 <h3 align="center">
-    <img alt="home-intro" src="readme_prints/logo_bbcs.jpg">
-    <p>
     E-commerce de uma cafeteria vintage com Python/Flask
-    </p>
 </h3>
 
 > [Vídeo completo mostrando o site]()
@@ -72,19 +72,15 @@ Features do projeto:
 
 # Telas do Site
 
-[Template base](https://freemiumdownload.com/downloads/e-shopper-free-ecommerce-html-template/)
+[Link pro Template base](https://freemiumdownload.com/downloads/e-shopper-free-ecommerce-html-template/)
 ## Homepage
-<h3 align="center">
-    <img alt="homepage" src="readme_prints/banner.PNG">
-</h3>
+![home-intro](readme_prints/banner.PNG)
 
 ---
 
 ## Login e Cadastro
 
-<h3 align="center">
-    <img alt="login-cadastro" src="readme_prints/login-register.gif">
-</h3>
+![login-register](readme_prints/login-register.gif)
 
 ---
 
@@ -92,29 +88,21 @@ Features do projeto:
 
 ### Todos os Produtos
 
-<h3 align="center">
-    <img alt="todos_produtos" src="readme_prints/produtos.gif">
-</h3>
+![produtos](readme_prints/produtos.gif)
 
 ### Produto Individual
 
-<h3 align="center">
-    <img alt="produto_individual" src="readme_prints/produto_individual.gif">
-</h3>
+![produto_individual](readme_prints/produto_individual.gif)
 
 ### Categorias e Filtros
 
-<h3 align="center">
-    <img alt="categorias_filtros" src="readme_prints/categorias_filtros.gif">
-</h3>
+![categorias_filtros](readme_prints/categorias_filtros.gif)
 
 ---
 
 ## Carrinho
 
-<h3 align="center">
-    <img alt="carrinho" src="readme_prints/carrinho.gif">
-</h3>
+![carrinho](readme_prints/carrinho.gif)
 
 ---
 
@@ -122,14 +110,10 @@ Features do projeto:
 Área para os administradores/donos do e-commerce poderem gerenciar os produtos facilmente
 
 ### Dashboard
-<h3 align="center">
-    <img alt="logout" src="readme_prints/admin_dashboard.gif">
-</h3>
+![admin_dashboard](readme_prints/admin_dashboard.gif)
 
 ### Adicionar Protudo
-<h3 align="center">
-    <img alt="logout" src="readme_prints/admin_add_produto.PNG">
-</h3>
+![admin_add_produto](readme_prints/admin_add_produto.PNG)
 
 ---
 
