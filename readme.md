@@ -6,7 +6,7 @@
     E-commerce de uma cafeteria vintage com Python/Flask
 </h3>
 
-> [Vídeo completo mostrando o site]()
+> [Vídeo completo mostrando o site](https://www.linkedin.com/posts/beatriz-vidal-a2b114200_python-ecommerce-flask-activity-6920898697136418816-ndyw?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 # Sumário
 
@@ -122,3 +122,5 @@ Features do projeto:
 > [Linkedin](https://www.linkedin.com/in/beatriz-vidal-a2b114200) | [Instagram](https://www.instagram.com/bvidalf/) | [E-mail](mailto:biavidalf@gmail.com) 👋
 >
 > Made by Beatriz Vidal ❤🎯
+>
+> Feature with [Paulo Rodrigues](https://www.linkedin.com/in/ro-paulo/)
